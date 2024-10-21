@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Your Age and Discover Your Day's History</title>
+  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+
+<body>
+  <div class="main-container">
+    <h1>Calculate Your Age and Know the History of the Day You Were Born</h1>
+
+    <div class="container">
+      <form id="ageForm">
+        <div class="input-group">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="input-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" required>
+        </div>
+
+        <button type="submit">Calculate Age</button>
+      </form>
+
+      <!-- Loader while fetching data -->
+      <div class="loader" id="loader"></div>
+
+      <!-- Where the output will be displayed -->
+      <div class="result-container">
+        <div class="result-card" id="ageResult"></div>
+        <div class="result-card" id="dayResult"></div>
+        <div class="result-card" id="eventResult"></div>
+        <div class="result-card" id="birthdayResult"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
